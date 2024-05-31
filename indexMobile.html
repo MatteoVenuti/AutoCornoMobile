@@ -12,7 +12,31 @@
     <div class="header">
         <img src="media/logo.png" id="logo">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1200px-Hamburger_icon_white.svg.png"
-            id="hamburger">
+            id="hamburger" onclick="toggleMenu()">
+    </div>
+    <div id="dropdownMenu" class="dropdown-menu">
+        <ul>
+            <li onclick="toggleSubMenu('usedCarsMenu')">Auto Usate</li>
+            <ul id="usedCarsMenu" class="submenu">
+                <li>Opzione 1</li>
+                <li>Opzione 2</li>
+            </ul>
+            <li onclick="toggleSubMenu('servicesMenu')">Servizi</li>
+            <ul id="servicesMenu" class="submenu">
+                <li>Opzione 1</li>
+                <li>Opzione 2</li>
+            </ul>
+            <li onclick="toggleSubMenu('assistanceMenu')">Assistenza</li>
+            <ul id="assistanceMenu" class="submenu">
+                <li>Opzione 1</li>
+                <li>Opzione 2</li>
+            </ul>
+            <li onclick="toggleSubMenu('offersMenu')">Offerte</li>
+            <ul id="offersMenu" class="submenu">
+                <li>Opzione 1</li>
+                <li>Opzione 2</li>
+            </ul>
+        </ul>
     </div>
     <div class="video">
         <video autoplay muted loop>
@@ -63,7 +87,6 @@
             <a>Scopri></a>
         </div>
     </div>
-    </div>
     <div class="ads">
         <h2>Sei pronto a vivere il tuo sogno?</h2>
         <p>Realizza il tuo desiderio di possedere un'auto d'epoca con AutoCorno. Offriamo una <b>selezione esclusiva</b> di
@@ -84,7 +107,8 @@
         <h2>Servizio clienti efficace</h2>
         <p>Per qualsiasi informazione sul tuo acquisto, noi siamo disponibli in ogni momento della giornata durante tutta la settimana. </p>
         <img src="https://external-preview.redd.it/Z3Y6EVvff1N3WjwauVUCPYGeO9lAHOMf9HVZ43BjBmg.jpg?width=1080&crop=smart&auto=webp&s=bd228ba271716054ed1d33e5be88250f35595d92"/>
-    </div><div class="carslider">
+    </div>
+    <div class="carslider">
         <div class="autocard2">
             <p class="nome">Diego Betto</p>
             <p class="prezzo">★★★★★</p>
@@ -101,6 +125,26 @@
             <p class="">La Punto è il diavolo. La Fiat Punto <br>è la pestilenza, la morte</p>
         </div>
     </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('dropdownMenu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+
+        function toggleSubMenu(subMenuId) {
+            var subMenu = document.getElementById(subMenuId);
+            if (subMenu.style.display === 'block') {
+                subMenu.style.display = 'none';
+            } else {
+                subMenu.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 
 </html>
