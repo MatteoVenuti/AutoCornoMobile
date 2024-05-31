@@ -120,6 +120,7 @@ body {
 }
 
 .autocard .prezzo {
+    font-style: italic;
     margin-top: -12px;
     font-size: 16px;
 }
