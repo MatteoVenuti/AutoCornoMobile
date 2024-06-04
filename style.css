@@ -154,6 +154,7 @@ body {
 
 .titoloslider {
     margin-top: -20px;
+    margin-bottom: 100px;
     padding-right: 6%;
     padding-left: 5%;
     color: white;
@@ -177,7 +178,7 @@ body {
 }
 
 .autocard {
-    margin-top: 60px;
+    margin-top: 40px;
     padding-left: 5%;
 }
 
@@ -198,7 +199,6 @@ body {
 
 .autocard a {
     font-weight: bold;
-    font-size: 20px;
     color: rgb(0, 153, 255);
 }
 
