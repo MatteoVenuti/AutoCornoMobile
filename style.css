@@ -162,11 +162,9 @@ body {
 
 .carslider {
     margin-top: -20px;
-    height: 340px;
+    height: 2000px;
     color: white;
-    overflow: auto;
     white-space: nowrap;
-    display: flex;
 }
 
 .carslider2 {
@@ -184,19 +182,18 @@ body {
 }
 
 .autocard .nome {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
 }
 
 .autocard .prezzo {
     font-style: italic;
-    margin-top: -12px;
-    font-size: 16px;
+    margin-top: -25px;
+    font-size: 24px;
 }
 
 .autocard .autoimmagine {
-    height: 150px;
-    width: 240px;
+    width: 350px;
 }
 
 .autocard a {
