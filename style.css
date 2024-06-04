@@ -177,7 +177,7 @@ body {
 }
 
 .autocard {
-    margin-top: 40px;
+    margin-top: 60px;
     padding-left: 5%;
 }
 
@@ -198,6 +198,7 @@ body {
 
 .autocard a {
     font-weight: bold;
+    font-size: 20px;
     color: rgb(0, 153, 255);
 }
 
